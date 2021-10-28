@@ -14,6 +14,7 @@
 - **order_id** – уникальный идентификатор заказа
 
  и часть скрипта:
+ 
 ![image](https://user-images.githubusercontent.com/91524886/139208034-4c41618e-bfb6-4a99-8920-b4f99afd2e24.png)
 ## 1. Что нужно вставить в (a)? (percent)
 
@@ -26,3 +27,8 @@
 1. sum(orders) over(order by time_to_convert) / sum(orders) over()
 2. sum(orders) over(order by time_to_convert) / sum(orders) 
 3. sum(orders) over(partition by time_to_convert order by time_to_convert) / sum(orders) ****
+
+## 3. Как поменять запрос, чтобы учитывать только те дни, в которых число заказов превышает 200?
+![image](https://user-images.githubusercontent.com/91524886/139208184-949cab86-d9ce-462a-9aaa-fb779ba84587.png)
+![image](https://user-images.githubusercontent.com/91524886/139208251-16a3eaca-f89d-4627-88bc-c2768a540d6b.png)
+
