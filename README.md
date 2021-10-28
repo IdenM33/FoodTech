@@ -14,19 +14,7 @@
 - **order_id** – уникальный идентификатор заказа
 
  и часть скрипта:
- with base_table as 
-(select date_diff(order_completed_dt, main_page_viewed_dt, day) as time_to_convert
-        , count(order_id) as orders
-from analytics.mart_orders
-where order_completed_dt is not null
-group by time_to_convert)
-
-select time_to_convert
-        , orders
-				, (a) as percent
-				, (b) as cumulative_percent
-from base_table
-order by time_to_convert desc
+![image](https://user-images.githubusercontent.com/91524886/139208034-4c41618e-bfb6-4a99-8920-b4f99afd2e24.png)
 ## 1. Что нужно вставить в (a)? (percent)
 
 1. orders/sum(orders) over() 
