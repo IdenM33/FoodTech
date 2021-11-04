@@ -20,6 +20,7 @@ Target-график выглядит вот так:
  и часть скрипта:
  
 ![image](https://user-images.githubusercontent.com/91524886/139208034-4c41618e-bfb6-4a99-8920-b4f99afd2e24.png)
+
 ## 1. Что нужно вставить в (a)? (percent)
 
 1. orders/sum(orders) over() 
