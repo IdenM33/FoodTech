@@ -29,7 +29,6 @@ Target-график выглядит вот так:
 
 ## 2. Что нужно вставить в (b) (cumulative_percent)
 
-
 1. sum(orders) over(order by time_to_convert) / sum(orders) over()
 2. sum(orders) over(order by time_to_convert) / sum(orders) 
 3. sum(orders) over(partition by time_to_convert order by time_to_convert) / sum(orders) ****
